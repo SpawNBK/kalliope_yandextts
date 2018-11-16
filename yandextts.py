@@ -16,6 +16,8 @@ class Yandextts(TTSModule):
     def __init__(self, **kwargs):
         super(Yandextts, self).__init__(**kwargs)
 
+	self.speaker = kwargs.get('speaker', None)
+        self.key = kwargs.get('key', None)
         self._check_parameters()
 
     def say(self, words):
@@ -47,7 +49,7 @@ class Yandextts(TTSModule):
         # Since the gTTS lib disabled the SSL verification we get rid of insecure request warning
         requests.packages.urllib3.disable_warnings(InsecureRequestWarning)
         
-        tts = TTS(self.speaker, "mp3", self.key, lang=self.language)
+        tts = TTS(self.speaker,"mp3", self.key, lang=self.language)
 	tts.generate(text=self.words)
         
         # OK we get the audio we can write the sound file

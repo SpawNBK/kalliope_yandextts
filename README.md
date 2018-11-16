@@ -16,6 +16,9 @@ Kalliope speaking from yandex
   ```
   kalliope install --git-url https://github.com/SpawNBK/kalliope_yandextts
   ```
+  after install tts you need do small operation:
+   - open file /usr/local/lib/python2.7/dist-packages/yandex_speech/tts.py in texteditor
+   - replace line 'extension = "." + self.__params["format"]' to 'extension = ".tts"'
 
 ## Notes
 
