@@ -1,4 +1,4 @@
-- name: Kalliope Yandex tts install
+- name: Kalliope yandex tts install
   hosts: localhost
   gather_facts: no
   connection: local

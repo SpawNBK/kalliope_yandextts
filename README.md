@@ -23,7 +23,6 @@ speakers: Speaker. Female: "jane", "oksana", "alyss", "omazh". Male: "zahar", "e
 
 in settings.yml do:
 
-# This is the default TTS that will be used by Kalliope to talk.
 default_text_to_speech: "yandextts"
 
 text_to_speech:
