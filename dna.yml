@@ -1,0 +1,9 @@
+name: "yandex_tts"
+type: "tts"
+author: "SpawN"
+
+kalliope_supported_version:
+    - 0.5
+
+tags:
+- "speach"

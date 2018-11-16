@@ -1,0 +1,1 @@
+from .yandextts import Yandextts
