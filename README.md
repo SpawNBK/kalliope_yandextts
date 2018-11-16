@@ -14,7 +14,7 @@ Kalliope speaking from yandex
 ## Installation
 
   ```
-  kalliope install --git-url https://github.com/SpawNBK/kalliope_yandextts
+  kalliope install --git-url https://github.com/SpawNBK/kalliope_yandextts.git
   ```
   after install tts you need do small operation:
    - open file /usr/local/lib/python2.7/dist-packages/yandex_speech/tts.py in texteditor
