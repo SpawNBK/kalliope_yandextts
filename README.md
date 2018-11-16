@@ -26,6 +26,7 @@ speakers: Speaker. Female: "jane", "oksana", "alyss", "omazh". Male: "zahar", "e
 
 in settings.yml do:
 
+```yaml
 default_text_to_speech: "yandextts"
 
 text_to_speech:
@@ -33,3 +34,5 @@ text_to_speech:
       language: "ru-RU"
       speaker: "alyss"
       key: "secret key"
+```
+
