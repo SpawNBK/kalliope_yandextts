@@ -33,3 +33,14 @@ text_to_speech:
       key: "secret key"
 ```
 
+you can also use cache
+```yaml
+default_text_to_speech: "yandextts"
+
+text_to_speech:
+  - yandextts:
+      language: "ru-RU"
+      speaker: "alyss"
+      key: "secret key"
+      cache: True
+```
