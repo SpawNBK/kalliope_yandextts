@@ -48,8 +48,8 @@ class Yandextts(TTSModule):
 
         # Since the gTTS lib disabled the SSL verification we get rid of insecure request warning
         requests.packages.urllib3.disable_warnings(InsecureRequestWarning)
-        
-        tts = TTS(self.speaker,"mp3", self.key, lang=self.language)
+
+        tts = TTS(self.speaker,"mp3", self.key, self.language)
 	tts.generate(text=self.words)
         
         # OK we get the audio we can write the sound file
