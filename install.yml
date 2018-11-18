@@ -9,3 +9,7 @@
       pip:
         name: yandex_speech
         version: 0.4
+    - name: "Configure yandex_tts_api"
+      shell: sed -i -e 's/extension = "." + self.__params\["format"\]/#extension = "." + self.__params\["format"\]\r        extension = ".tts"/' '/usr/local/lib/python2.7/dist-packages/yandex_speech/tts.py'
+      args:
+        warn: False
